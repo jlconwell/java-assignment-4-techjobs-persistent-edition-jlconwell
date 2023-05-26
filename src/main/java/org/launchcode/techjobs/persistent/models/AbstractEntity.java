@@ -15,7 +15,7 @@ public abstract class AbstractEntity {
     private int id;
 
     @Size(min=3, message="Name must be a minimum of three characters.")
-    @NotBlank(message="Cannot leave this field blank.")
+    @NotBlank
     private String name;
 
     public int getId() {

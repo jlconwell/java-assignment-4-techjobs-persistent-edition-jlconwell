@@ -1,11 +1,12 @@
 package org.launchcode.techjobs.persistent.models;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.NotBlank;
 
 @Entity
 public class Skill extends AbstractEntity {
 
-
+    @NotBlank
     private String description;
 
     public Skill() {};
