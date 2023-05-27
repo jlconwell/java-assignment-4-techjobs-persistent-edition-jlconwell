@@ -46,7 +46,7 @@ public class HomeController {
         return "add";
     }
 
-    @PostMapping("add")
+    @PostMapping("add") //add @RequestParam @RequestParam List<Integer> skills for task4
     public String processAddJobForm(@ModelAttribute @Valid Job newJob,
                                        Errors errors, Model model, @RequestParam int employerId) {
 
